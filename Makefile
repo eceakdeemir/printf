@@ -19,7 +19,4 @@ fclean: clean
 	
 re: fclean all
 
-test: re clean
-	@gcc main.c libftprintf.a -o test
-
 .PHONY: all clean fclean re

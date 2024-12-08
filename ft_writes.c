@@ -6,13 +6,13 @@
 /*   By: ecakdemi <ecakdemi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 15:10:55 by ecakdemi          #+#    #+#             */
-/*   Updated: 2024/12/07 17:52:27 by ecakdemi         ###   ########.fr       */
+/*   Updated: 2024/12/08 15:03:36 by ecakdemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putchar(char c)
+int	ft_putchar(int c)
 {
 	write(1, &c, 1);
 	return (1);

@@ -6,7 +6,7 @@
 /*   By: ecakdemi <ecakdemi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 15:10:50 by ecakdemi          #+#    #+#             */
-/*   Updated: 2024/12/07 17:51:08 by ecakdemi         ###   ########.fr       */
+/*   Updated: 2024/12/08 15:17:48 by ecakdemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,8 +49,10 @@ int	ft_printf(const char *str, ...)
 	va_start(arg, str);
 	while (str[i] != '\0')
 	{
-		if (str[i] == '%' && str[i + 1] != '\0')
+		if (str[i] == '%')
 		{
+			if (str[i + 1] == '\0')
+				return (-1);
 			len += ft_helper(&arg, &str[i + 1]);
 			i++;
 		}
@@ -58,5 +60,6 @@ int	ft_printf(const char *str, ...)
 			len += ft_putchar(str[i]);
 		i++;
 	}
+	va_end(arg);
 	return (len);
 }

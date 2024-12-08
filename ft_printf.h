@@ -6,7 +6,7 @@
 /*   By: ecakdemi <ecakdemi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 14:01:25 by ecakdemi          #+#    #+#             */
-/*   Updated: 2024/12/07 17:54:18 by ecakdemi         ###   ########.fr       */
+/*   Updated: 2024/12/08 15:03:44 by ecakdemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <unistd.h>
 # include <stdarg.h>
 
-int	ft_putchar(char c);
+int	ft_putchar(int c);
 int	ft_putstr(char *str);
 int	ft_putnbr(long number);
 int	ft_hex_lower(unsigned long number);
